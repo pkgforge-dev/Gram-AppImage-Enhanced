@@ -16,6 +16,7 @@ export GRAM_ALLOW_ROOT=true
 
 # Deploy dependencies
 quick-sharun /opt/gram/*/*
+ln -s bin ./AppDir/libexec
 
 # Additional changes can be done in between here
 

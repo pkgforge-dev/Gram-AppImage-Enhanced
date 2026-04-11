@@ -6,7 +6,7 @@ ARCH=$(uname -m)
 
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
-pacman -Syu --noconfirm libmd
+pacman -Syu --noconfirm libmd libbsd
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"

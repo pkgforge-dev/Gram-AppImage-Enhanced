@@ -12,6 +12,7 @@ export ICON=/usr/share/icons/hicolor/scalable/apps/app.liten.Gram.svg
 export DESKTOP=/usr/share/applications/app.liten.Gram.desktop
 export DEPLOY_VULKAN=1
 export URUNTIME_PRELOAD=1
+export GRAM_ALLOW_ROOT=true
 
 # Deploy dependencies
 quick-sharun /opt/gram/*/*

@@ -13,6 +13,7 @@ export DESKTOP=/usr/share/applications/app.liten.Gram.desktop
 export DEPLOY_VULKAN=1
 export URUNTIME_PRELOAD=1
 export GRAM_ALLOW_ROOT=true
+export STARTUPWMCLASS=app.liten.Gram
 
 # Deploy dependencies
 quick-sharun /opt/gram/*/*

@@ -7,7 +7,7 @@
 [![Latest Stable Release](https://img.shields.io/github/v/release/pkgforge-dev/Gram-AppImage-Enhanced)](https://github.com/pkgforge-dev/Gram-AppImage-Enhanced/releases/latest)
 
 <p align="center">
-  <img src="https://codeberg.org/GramEditor/gram/raw/branch/main/assets/images/logo_light.svg" width="128" />
+  <img src="https://codeberg.org/GramEditor/gram/raw/branch/main/crates/gram/resources/app.liten.Gram.svg" width="128" />
 </p>
 
 

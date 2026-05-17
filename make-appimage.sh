@@ -3,20 +3,19 @@
 set -eu
 
 ARCH=$(uname -m)
-VERSION=$(pacman -Q gram-bin | awk '{print $2; exit}') # example command to get version of application here
-export ARCH VERSION
+export ARCH
 export OUTPATH=./dist
 export ADD_HOOKS="self-updater.hook"
 export UPINFO="gh-releases-zsync|${GITHUB_REPOSITORY%/*}|${GITHUB_REPOSITORY#*/}|latest|*$ARCH.AppImage.zsync"
-export ICON=/usr/share/icons/hicolor/scalable/apps/app.liten.Gram.svg
-export DESKTOP=/usr/share/applications/app.liten.Gram.desktop
+export ICON="$PWD"/gram.app/share/icons/hicolor/scalable/apps/app.liten.Gram.svg
+export DESKTOP="$PWD"/gram.app/share/applications/gram.desktop
 export DEPLOY_VULKAN=1
 export URUNTIME_PRELOAD=1
 export GRAM_ALLOW_ROOT=true
 export STARTUPWMCLASS=app.liten.Gram
 
 # Deploy dependencies
-quick-sharun /opt/gram/*/*
+quick-sharun ./gram.app/*/*
 ln -s bin ./AppDir/libexec
 
 # Additional changes can be done in between here
